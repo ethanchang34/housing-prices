@@ -8,4 +8,13 @@ module.exports = {
     "eslint:recommended",
     "@vue/eslint-config-prettier",
   ],
+  overrides: [
+    {
+      files: ["**/*.spec.js", "**/*.spec.jsx", "**/*.test.js"],
+      env: {
+        jest: true,
+      },
+    },
+  ],
+  "linebreak-style": ["error", "windows"],
 };
